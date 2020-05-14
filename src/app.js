@@ -5,6 +5,7 @@ const hbs = require('hbs');
 const forecast = require('./utils/forecast.js');
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 //Define path for express config
 const publicDirectoryPath = path.join(__dirname, '../public');
@@ -86,6 +87,6 @@ app.get('/about', (req, res) => {
   res.send('About Page!');
 }); */
 
-app.listen(3000, () => {
-  console.log('Port is up');
+app.listen(port, () => {
+  console.log('Port is up' + port);
 });
