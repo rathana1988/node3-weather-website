@@ -1,11 +1,10 @@
-console.log('client side javascript loaded');
+//console.log('client side javascript loaded');
 
 fetch('http://puzzle.mead.io/puzzle').then((response) => {
   response.json().then((data) => {
     //console.log(data);
   });
 });
-
 const url =
   'http://api.weatherstack.com/current?access_key=377fd436d8cd634406d75aeadc8328f2&query=12.917143,80.192352';
 
