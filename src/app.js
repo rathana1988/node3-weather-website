@@ -55,6 +55,7 @@ app.get('/help/*', (req, res) => {
 
 app.get('/weather', (req, res) => {
   //res.send('Weather page!');
+  //res.send('Weather page!');
   //console.log(req.query.latitude);
   if (!req.query.latitude && !req.query.longtitude) {
     return res.send({ error: 'Please provide the address' });
